@@ -1,0 +1,128 @@
+*{
+    padding: 20px;
+}
+body{
+    background-color: red;
+}
+.padre{
+    background-color: brown;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:"nombre nombre nombre"
+                        "caja1 caja2 caja3"
+                        "caja4 caja4 caja5"
+                        "caja4 caja4 caja6"
+                        "caja4 caja4 caja7"
+                        "caja8 caja9 caja10"
+                        "caja8 caja11 caja10";
+}
+.nombre{
+    background-color: yellow;
+    grid-area: nombre;
+}
+.caja1{
+    background-color: yellow;
+    grid-area: caja1;
+}
+.caja2{
+    background-color: yellow;
+    grid-area: caja2;
+}
+.caja3{
+    background-color: yellow;
+    grid-area: caja3;
+}
+.caja4{
+    background-color: yellow;
+    grid-area: caja4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+.caja5{
+    background-color: yellow;
+    grid-area: caja5;
+}
+.caja6{
+    background-color: yellow;
+    grid-area: caja6;
+}
+.caja7{
+    background-color: yellow;
+    grid-area: caja7;
+}
+.caja8{
+    background-color: yellow;
+    grid-area: caja8;
+}
+.caja9{
+    background-color: yellow;
+    grid-area: caja9;
+}
+.caja10{
+    background-color: yellow;
+    grid-area: caja10;
+}
+.caja11{
+    background-color: yellow;
+    grid-area: caja11;
+}
+.cabeza{
+    background-color: blue;
+    border-radius: 25px;
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr ;
+    grid-row: 2/3;
+    grid-column:19/22;
+
+}
+.cuerpo{
+    background-color: blue;
+    border-radius: 50px;   
+    height: 20px;     
+    grid-row: 3/6;
+    grid-column: 18/23;
+}
+.oreja{
+    background-color: red;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        border-radius: 25px;
+        padding: 5px;
+        grid-column: 19/20;
+}
+.oreja2{
+    background-color: red;
+        grid-row: 1/2;
+        border-radius: 25px;
+        padding: 5px;
+        grid-column: 21/22;
+}
+.ojo1{
+background-color: red;
+        padding: 2px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        border-radius: 25px;
+        width: 5px;
+        height: 5px;
+}
+.ojo2{
+background-color: red;
+        padding: 2px;  
+        grid-row: 1/2;
+        grid-column: 3/4;
+        border-radius: 25px;
+                width: 5px;
+        height: 5px;
+}
+.boca{
+    background-color: red;
+    padding: 2px;
+    grid-row: 3/4;
+        grid-column: 2/3;
+                border-radius: 25px;
+                width: 10px;
+}
